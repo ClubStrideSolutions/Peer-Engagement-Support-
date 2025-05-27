@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Youth Public Health Leadership – Session 5</title>
+  <meta name="description" content="Week 3 · Peer Engagement & Support – Progress Assessment, Material Finalization, and Distribution Strategy (26 May 2025)" />
+
+  <!-- ========= GLOBAL STYLES ========= -->
+  <style>
+    :root{
+      --primary-color:#4c6ef5;
+      --secondary-color:#40c057;
+      --accent-color:#fd7e14;
+      --dark-color:#343a40;
+      --light-color:#f8f9fa;
+      --text-color:#212529;
+      --shadow:0 4px 8px rgba(0,0,0,.1)
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',Tahoma,sans-serif;line-height:1.6;color:var(--text-color);background:#f1f3f5}
+    .container{max-width:1200px;margin:auto;padding:5px}
+    header{background:linear-gradient(135deg,var(--primary-color),#228be6);color:#fff;padding:2.5rem;text-align:center;border-radius:15px;margin-bottom:2rem;box-shadow:var(--shadow)}
+    header h1{font-size:2.2rem;margin-bottom:.5rem;font-weight:700}
+    header h2{font-size:1.3rem;font-weight:600;margin-bottom:.4rem;opacity:.95}
+    header p{font-size:1.05rem;margin-bottom:1rem;opacity:.9}
+    .date-box{display:inline-block;background:rgba(255,255,255,.2);padding:.5rem 1.2rem;border-radius:30px;font-weight:500;margin-top:.4rem}
+
+    /* CONTENT BLOCKS */
+    .intro-section,.activities-section{background:#fff;border-radius:15px;padding:2rem;margin-bottom:2rem;box-shadow:var(--shadow)}
+    .intro-message{text-align:center;max-width:800px;margin:0 auto 1.5rem;font-size:1.1rem;line-height:1.7}
+    .section-title{color:var(--primary-color);font-size:1.8rem;margin-bottom:1.5rem;text-align:center;position:relative;padding-bottom:.5rem}
+    .section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:100px;height:3px;background:var(--primary-color)}
+
+    /* ACTIVITY GRID */
+    .activity-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2rem}
+    .activity-card{background:var(--light-color);border-radius:10px;padding:1.5rem;box-shadow:0 2px 4px rgba(0,0,0,.05);transition:transform .3s;cursor:pointer;position:relative}
+    .activity-card:hover{transform:translateY(-5px)}
+    .activity-card h4{color:var(--primary-color);margin-bottom:1rem;font-size:1.1rem;display:flex;align-items:center;justify-content:space-between}
+    .activity-card h4 .time{font-size:.8rem;padding:.3rem .6rem;border-radius:20px;background:var(--accent-color);color:#fff;font-weight:400}
+    .activity-card ul{padding-left:1.2rem;margin-top:.5rem}
+    .activity-card li{margin-bottom:.5rem;color:#495057;font-size:.95rem}
+    .activity-card a{color:var(--primary-color);text-decoration:none}
+    .activity-card a:hover{text-decoration:underline}
+    .expand-icon{position:absolute;bottom:15px;right:15px;background:var(--primary-color);color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;transition:.3s}
+    .detailed-content{display:none;background:#fff;border-radius:10px;padding:1.5rem;margin-top:1rem;border-top:3px solid var(--primary-color)}
+    .detailed-content.active{display:block;animation:fade .5s}
+    
+    @keyframes fade{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+    
+    /* BOXES FOR KEY TERMS, DISCUSSION, ACTIVITIES, REFLECTION */
+    .definition-box{background:#e7f5ff;border-left:4px solid #4dabf7;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    .discussion-box{background:#fff9db;border-left:4px solid #fcc419;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    .activity-box{background:#f3f0ff;border-left:4px solid #7950f2;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    .feedback-box{background:#ebfbee;border-left:4px solid #40c057;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    .notice-box{background:#ffe3e3;border-left:4px solid #fa5252;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    
+    /* FOOTER */
+    .footer{text-align:center;padding:2rem;background:var(--dark-color);color:#fff;border-radius:15px;margin-top:2rem;font-size:.9rem}
+    @media(max-width:768px){.activity-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ===== HEADER ===== -->
+    <header>
+      <h1>Public Health Leadership</h1>
+      <h2>Peer Engagement & Support – Week 3</h2>
+      <p>Progress assessment, material finalization, and strategic distribution planning for peer-to-peer sharing within your high schools.</p>
+      <div class="date-box">Monday, 26 May 2025</div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro-section">
+      <div class="intro-message">
+        <p><strong>Session 5: Launch-Ready Materials & School Distribution Strategy</strong><br>Teams assess their progress since baseline, finalize resource cards with peer feedback, and develop a comprehensive distribution strategy for peer-to-peer sharing within their high schools, with clear roles and tracking mechanisms that will be implemented starting tomorrow.</p>
+        <div class="date-box">Monday 26 May 2025 | 90 mins</div>
+        <div class="notice-box" style="margin-top:1.5rem">
+          <p><strong>Note:</strong> Please complete the Progress Assessment Survey on Google Classroom at the start of class. This will help us track your growth and learning since the baseline assessment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="activities-section">
+      <h2 class="section-title">Session Activities</h2>
+      <p style="text-align:center;margin-bottom:20px;color:#495057;">Complete these activities to prepare for immediate launch of your outreach campaign.</p>
+      <div class="activity-grid">
+        
+        <!-- Progress Assessment Survey -->
+        <div class="activity-card" onclick="toggleSection('act-survey')">
+          <h4>Progress Assessment Survey <span class="time">20 mins</span></h4>
+          <ul>
+            <li>Measure growth since baseline</li>
+            <li>Identify knowledge gains</li>
+            <li>Assess confidence changes</li>
+          </ul>
+          <div class="expand-icon">+</div>
+          <div id="act-survey" class="detailed-content">
+            <div class="activity-box">
+              <h4>Activity Overview</h4>
+              <p>Complete the 7-question Progress Assessment Survey on Google Classroom. This survey measures your growth and learning since the baseline assessment you took at the beginning of the program.</p>
+              <p><strong>Survey Focus Areas:</strong></p>
+              <ul>
+                <li>Understanding of health challenge interconnections</li>
+                <li>Knowledge of available youth resources</li>
+                <li>Confidence in health advocacy</li>
+                <li>Skills development progress</li>
+                <li>Barrier-reduction strategies</li>
+                <li>Framework application abilities</li>
+                <li>Most valuable learning experiences</li>
+              </ul>
+              <p style="margin-top:1rem"><strong>Instructions:</strong></p>
+              <ul>
+                <li>Access the survey through Google Classroom</li>
+                <li>Answer all 7 questions honestly based on your current knowledge and skills</li>
+                <li>Submit your responses before moving to the next activity</li>
+                <li>Results will help us tailor remaining sessions to your needs</li>
+              </ul>
+            </div>
+            
+            <div class="feedback-box">
+              <h4>Reflection</h4>
+              <p>After completing the survey on Google Classroom, take a moment to reflect on your growth journey. Consider how your understanding has evolved since the baseline assessment and identify areas where you'd like to continue developing your skills.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resource Card Finalization -->
+        <div class="activity-card" onclick="toggleSection('act-finalize')">
+          <h4>Resource Card Creation & Visual Design Completion <span class="time">40 mins</span></h4>
+          <ul>
+            <li>Incorporate peer feedback</li>
+            <li>Finalize all design elements</li>
+            <li>Quality check & production prep</li>
+          </ul>
+          <div class="expand-icon">+</div>
+          <div id="act-finalize" class="detailed-content">
+            <div class="definition-box">
+              <h4>Key Terms</h4>
+              <ul>
+                <li><strong>Production-ready</strong> - Materials finalized with proper resolution, bleeds, and formatting for printing</li>
+                <li><strong>Accessibility check</strong> - Ensuring materials meet standards for readability and inclusive design</li>
+                <li><strong>Version control</strong> - System for tracking changes and maintaining final approved versions</li>
+                <li><strong>Print specifications</strong> - Technical requirements including size, color mode, and file format</li>
+              </ul>
+            </div>
+            
+            <div class="activity-box">
+              <h4>Activity</h4>
+              <p><strong>Part 1: Peer Feedback Integration (15 mins)</strong></p>
+              <ul>
+                <li>Review feedback collected from Session 4</li>
+                <li>Prioritize changes based on:
+                  <ul>
+                    <li>Clarity improvements</li>
+                    <li>Accessibility enhancements</li>
+                    <li>Youth appeal factors</li>
+                    <li>Barrier-reduction effectiveness</li>
+                  </ul>
+                </li>
+                <li>Make final design refinements</li>
+              </ul>
+              
+              <p><strong>Part 2: Production Preparation (20 mins)</strong></p>
+              <ul>
+                <li>Finalize all resource cards ensuring:
+                  <ul>
+                    <li>Consistent branding across all materials</li>
+                    <li>QR codes tested and functional</li>
+                    <li>Contact information verified</li>
+                    <li>Print specifications met (300 DPI, CMYK color mode)</li>
+                    <li>Bleed margins added where needed</li>
+                  </ul>
+                </li>
+                <li>Create final checklist including:
+                  <ul>
+                    <li>All text proofread for errors</li>
+                    <li>Images high-resolution and properly licensed</li>
+                    <li>Colors accessible (contrast ratios checked)</li>
+                    <li>File naming convention followed</li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <p><strong>Part 3: Quality Assurance (5 mins)</strong></p>
+              <ul>
+                <li>Partner review using production checklist</li>
+                <li>Test print one sample of each design</li>
+                <li>Final approval and file submission</li>
+              </ul>
+            </div>
+            
+            <div class="feedback-box">
+              <h4>Reflection Questions</h4>
+              <ul>
+                <li>What feedback most improved your final design?</li>
+                <li>How did you balance creativity with practical constraints?</li>
+                <li>What would you do differently if starting over?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Distribution Strategy Development -->
+        <div class="activity-card" onclick="toggleSection('act-distribution')">
+          <h4>Prepare School Distribution Strategy <span class="time">30 mins</span></h4>
+          <ul>
+            <li>Map school distribution locations</li>
+            <li>Assign team roles for school coverage</li>
+            <li>Create tracking system for peer-to-peer sharing</li>
+          </ul>
+          <div class="expand-icon">+</div>
+          <div id="act-distribution" class="detailed-content">
+            <div class="definition-box">
+              <h4>Key Terms</h4>
+              <ul>
+                <li><strong>Barrier reduction</strong> - Proactively addressing obstacles that prevent students from accessing health services</li>
+                <li><strong>Peer influence</strong> - Leveraging trusted relationships between students to share important health information</li>
+                <li><strong>School-based outreach</strong> - Distribution and engagement activities conducted within the high school setting</li>
+                <li><strong>Grade-level targeting</strong> - Tailoring messages and approaches for different student year groups</li>
+              </ul>
+            </div>
+            
+            <div class="discussion-box">
+              <h4>Discussion Points</h4>
+              <ul>
+                <li>Where do students naturally gather and feel comfortable in your school?</li>
+                <li>What times during the school day maximize peer-to-peer interaction?</li>
+                <li>How can we reach different student groups (freshmen vs. seniors, different social circles)?</li>
+                <li>What school policies should guide our distribution approach?</li>
+              </ul>
+            </div>
+            
+            <div class="activity-box">
+              <h4>Activity</h4>
+              <p style="padding:0.8rem;background:#e7f5ff;border-radius:5px;margin-bottom:1rem;">
+                <strong>⚠️ Important:</strong> The strategy you create will be implemented in your high schools starting tomorrow. Ensure all team members understand their roles and have access to materials before leaving class today.
+              </p>
+              
+</li>
+                    <li>Safety and supervision needs</li>
+                    <li>Complementary services available</li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <p><strong>Part 2: Role Assignment & Accountability (10 mins)</strong></p>
+              <ul>
+                <li>Create Distribution Team Roles:
+                  <ul>
+                    <li><strong>Zone Leaders:</strong> Responsible for specific areas of the school (e.g., different floors, buildings, or wings)</li>
+                    <li><strong>Engagement Specialists:</strong> Lead peer conversations during lunch, passing periods, and after school</li>
+                    <li><strong>Data Trackers:</strong> Record distribution numbers and capture peer feedback</li>
+                    <li><strong>Supply Managers:</strong> Store materials safely at school and manage daily distribution kits</li>
+                    <li><strong>School Liaison:</strong> Coordinate with administration, teachers, and school wellness staff</li>
+                  </ul>
+                </li>
+                <li>Develop accountability structure:
+                  <ul>
+                    <li>Morning huddles before first period</li>
+                    <li>Lunchtime check-ins for progress updates</li>
+                    <li>After-school debrief sessions</li>
+                    <li>Shared digital tracking via school-approved platforms</li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <p><strong>Part 3: Tracking System Creation (10 mins)</strong></p>
+              <ul>
+                <li>Design Distribution Tracking Document including:
+                  <ul>
+                    <li>Date, time, and location fields</li>
+                    <li>Number of cards distributed by type</li>
+                    <li>Estimated reach (people engaged)</li>
+                    <li>Notable interactions or feedback section</li>
+                    <li>Restock needs tracker</li>
+                    <li>Team member responsible field</li>
+                  </ul>
+                </li>
+                <li>Create engagement metrics section:
+                  <ul>
+                    <li>Peer conversations by grade level</li>
+                    <li>Questions answered by topic area</li>
+                    <li>Student-to-student referrals tracked</li>
+                    <li>Interest in follow-up information</li>
+                  </ul>
+                </li>
+                <li>Establish daily reporting process:
+                  <ul>
+                    <li>Set after-school submission deadline for team members</li>
+                    <li>Share tracking document via school-approved platforms</li>
+                    <li>Test the tracking system with a practice entry</li>
+                    <li>Ensure site lead has access to compile school data</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="feedback-box">
+              <h4>Team Planning Output</h4>
+              <p>By the end of this activity, each team should have:</p>
+              <ul>
+                <li>A completed school distribution map with specific locations and optimal times</li>
+                <li>Clear role assignments for covering all areas of your school</li>
+                <li>A tracking spreadsheet accessible to all team members at school</li>
+                <li>Communication plan for coordinating during the school day</li>
+              </ul>
+              <p style="margin-top:1rem"><strong>Next Steps:</strong> Your school-based distribution strategy will be implemented starting tomorrow. Site leads will compile data from all team members daily.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assignment -->
+    <section class="activities-section">
+      <h2 class="section-title">Session Assignment</h2>
+      <p style="text-align:center;margin-bottom:20px;color:#495057;">Execute your distribution strategy throughout Week 3 - site leads will track and report all metrics daily via Google Classroom.</p>
+      <div class="activity-grid">
+        <div class="activity-card" style="cursor:auto;">
+          <h4>School-Based Outreach Launch & Metric Tracking <span class="time">Week 3 Implementation</span></h4>
+          <ul>
+            <li>Execute distribution plan within your high schools</li>
+            <li>Engage peers during school hours</li>
+            <li>Site leads compile and submit daily school metrics</li>
+          </ul>
+          <div class="detailed-content" style="display:block;">
+            <p><strong>School-Based Implementation:</strong></p>
+            <p>Using the distribution strategy and role assignments created today, begin outreach activities in your high schools starting tomorrow morning. Each team member should arrive prepared with materials and clear understanding of their coverage areas within the school.</p>
+            
+            <p><strong>Role-Specific Execution:</strong></p>
+            <ul>
+              <li><strong>Zone Leaders:</strong> Cover your assigned school areas during peak traffic times (passing periods, lunch, before/after school)</li>
+              <li><strong>Engagement Specialists:</strong> Position yourself in high-traffic areas to have natural peer conversations</li>
+              <li><strong>Data Trackers:</strong> Move throughout the school to capture real-time metrics and feedback</li>
+              <li><strong>Supply Managers:</strong> Set up distribution stations and ensure materials are accessible throughout the day</li>
+              <li><strong>School Liaison:</strong> Check in with administration and coordinate with teachers who support the initiative</li>
+            </ul>
+            
+            <p><strong>Daily Metrics to Track (Using Your Tracking System):</strong></p>
+            <ul>
+              <li>Cards distributed per school location (cafeteria, hallways, library, etc.)</li>
+              <li>Grade levels reached (freshman, sophomore, junior, senior)</li>
+              <li>Peak engagement times during the school day</li>
+              <li>Common questions from different student groups</li>
+              <li>Teacher or staff support received</li>
+              <li>Peer-to-peer referrals (students sharing with friends)</li>
+            </ul>
+            
+            <p><strong>Site Lead Daily Responsibilities:</strong></p>
+            <ol>
+              <li>Collect tracking sheets from all team members by end of school day</li>
+              <li>Compile data from all participating high schools into master tracking document</li>
+              <li>Analyze metrics against the KPIs established in previous sessions</li>
+              <li>Submit consolidated report via Google Classroom by 7:00 PM daily including:
+                <ul>
+                  <li>Quantitative metrics from each school's tracking sheets</li>
+                  <li>Qualitative insights about peer responses and engagement</li>
+                  <li>Photos documenting distribution activities (with appropriate permissions)</li>
+                  <li>Challenges faced within school settings and adjustments made</li>
+                  <li>Coordination needs between different school teams</li>
+                </ul>
+              </li>
+            </ol>
+            
+            <p><strong>Success Indicators (Based on Your SMART Goals):</strong></p>
+            <ul>
+              <li>Reaching students across all grade levels</li>
+              <li>Coverage of key school locations during peak times</li>
+              <li>Quality of peer-to-peer conversations (not just handouts)</li>
+              <li>Positive feedback from school staff and administration</li>
+              <li>Evidence of students sharing resources with friends</li>
+              <li>Increased awareness demonstrated through follow-up questions</li>
+            </ul>
+            
+            <p style="margin-top:1.5rem;padding:1rem;background:#fcc419;background:rgba(252,196,25,0.2);border:1px solid #fcc419;border-radius:5px;">
+              <strong>⚡ Reminder:</strong> Distribution begins in your high schools tomorrow morning. Follow your distribution strategy while remaining flexible to adapt based on real-time peer feedback. Site leads must submit the first daily report by 7:00 PM tomorrow after the first day of distribution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>© 2025 Health Amplified · Youth Public Health Action &amp; Collaborative Systems Lab</p>
+      <p>Contact: javier@clubstride.org | (707) 204-3160</p>
+    </footer>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    function toggleSection(id){
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.classList.toggle('active');
+      const card = el.closest('.activity-card');
+      if(card){
+        const expanded = el.classList.contains('active');
+        card.setAttribute('aria-expanded', expanded);
+        const icon = card.querySelector('.expand-icon');
+        if(icon) icon.textContent = expanded ? '–' : '+';
+      }
+    }
+  </script>
+</body>
+</html>
