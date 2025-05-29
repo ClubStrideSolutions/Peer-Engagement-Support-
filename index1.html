@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Youth Public Health Leadership – Session 4</title>
+  <meta name="description" content="Week 2 · Messaging Activation – Framework Integration, Message Development, and Resource Card Creation (22 May 2025)" />
+
+  <!-- ========= GLOBAL STYLES ========= -->
+  <style>
+    :root{
+      --primary-color:#4c6ef5;
+      --secondary-color:#40c057;
+      --accent-color:#fd7e14;
+      --dark-color:#343a40;
+      --light-color:#f8f9fa;
+      --text-color:#212529;
+      --shadow:0 4px 8px rgba(0,0,0,.1)
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',Tahoma,sans-serif;line-height:1.6;color:var(--text-color);background:#f1f3f5}
+    .container{max-width:1200px;margin:auto;padding:5px}
+    header{background:linear-gradient(135deg,var(--primary-color),#228be6);color:#fff;padding:2.5rem;text-align:center;border-radius:15px;margin-bottom:2rem;box-shadow:var(--shadow)}
+    header h1{font-size:2.2rem;margin-bottom:.5rem;font-weight:700}
+    header h2{font-size:1.3rem;font-weight:600;margin-bottom:.4rem;opacity:.95}
+    header p{font-size:1.05rem;margin-bottom:1rem;opacity:.9}
+    .date-box{display:inline-block;background:rgba(255,255,255,.2);padding:.5rem 1.2rem;border-radius:30px;font-weight:500;margin-top:.4rem}
+
+    /* CONTENT BLOCKS */
+    .intro-section,.activities-section{background:#fff;border-radius:15px;padding:2rem;margin-bottom:2rem;box-shadow:var(--shadow)}
+    .intro-message{text-align:center;max-width:800px;margin:0 auto 1.5rem;font-size:1.1rem;line-height:1.7}
+    .section-title{color:var(--primary-color);font-size:1.8rem;margin-bottom:1.5rem;text-align:center;position:relative;padding-bottom:.5rem}
+    .section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:100px;height:3px;background:var(--primary-color)}
+
+    /* ACTIVITY GRID */
+    .activity-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2rem}
+    .activity-card{background:var(--light-color);border-radius:10px;padding:1.5rem;box-shadow:0 2px 4px rgba(0,0,0,.05);transition:transform .3s;cursor:pointer;position:relative}
+    .activity-card:hover{transform:translateY(-5px)}
+    .activity-card h4{color:var(--primary-color);margin-bottom:1rem;font-size:1.1rem;display:flex;align-items:center;justify-content:space-between}
+    .activity-card h4 .time{font-size:.8rem;padding:.3rem .6rem;border-radius:20px;background:var(--accent-color);color:#fff;font-weight:400}
+    .activity-card ul{padding-left:1.2rem;margin-top:.5rem}
+    .activity-card li{margin-bottom:.5rem;color:#495057;font-size:.95rem}
+    .activity-card a{color:var(--primary-color);text-decoration:none}
+    .activity-card a:hover{text-decoration:underline}
+    .expand-icon{position:absolute;bottom:15px;right:15px;background:var(--primary-color);color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;transition:.3s}
+    .detailed-content{display:none;background:#fff;border-radius:10px;padding:1.5rem;margin-top:1rem;border-top:3px solid var(--primary-color)}
+    .detailed-content.active{display:block;animation:fade .5s}
+    
+    @keyframes fade{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+    
+    /* BOXES FOR KEY TERMS, DISCUSSION, ACTIVITIES, REFLECTION */
+    .definition-box{background:#e7f5ff;border-left:4px solid #4dabf7;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    .discussion-box{background:#fff9db;border-left:4px solid #fcc419;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    .activity-box{background:#f3f0ff;border-left:4px solid #7950f2;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    .feedback-box{background:#ebfbee;border-left:4px solid #40c057;padding:1rem;border-radius:5px;margin-bottom:1.5rem}
+    
+    /* FOOTER */
+    .footer{text-align:center;padding:2rem;background:var(--dark-color);color:#fff;border-radius:15px;margin-top:2rem;font-size:.9rem}
+    @media(max-width:768px){.activity-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ===== HEADER ===== -->
+    <header>
+      <h1>Public Health Leadership</h1>
+      <h2>Messaging Activation – Week 2</h2>
+      <p>Framework integration, message development, and resource card creation to build awareness of structural barriers &amp; risk factors.</p>
+      <div class="date-box">Thursday, 22 May 2025</div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro-section">
+      <div class="intro-message">
+        <p><strong>Session 4: Material Creation &amp; Resource Cards</strong><br>Teams integrate frameworks, develop effective messages, and create visually engaging and informative resource cards that connect youth to essential services, using insights from the Teen Survival Guide.</p>
+        <div class="date-box">Thursday 22 May 2025 | 120 mins</div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="activities-section">
+      <h2 class="section-title">Session Resources</h2>
+      <div class="activity-grid">
+        <!-- DESIGN RESOURCE KIT -->
+        <div class="activity-card" onclick="toggleSection('res-kit')">
+          <h4>Design Resource Kit</h4>
+          <ul><li>Canva templates</li><li>Visual elements library</li><li>Color palette guide</li></ul>
+          <div class="expand-icon">+</div>
+          <div id="res-kit" class="detailed-content">
+            <div class="activity-box">
+              <h4>Contents</h4>
+              <p>Access pre-designed templates, approved visual elements, and consistent brand guidelines to create professional materials.</p>
+              <ul>
+                <li><a href="https://www.canva.com/templates/s/campaign/" target="_blank">Canva Campaign Templates&nbsp;Gallery</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/library" target="_blank">Flaticon Icons &amp; Illustration&nbsp;Library</a></li>
+                <li><a href="https://venngage.com/tools/accessible-color-palette-generator" target="_blank">Venngage Accessible Color Palette&nbsp;Generator&nbsp;&amp;&nbsp;Guide</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MESSAGE FRAMING GUIDE -->
+        <div class="activity-card" onclick="toggleSection('res-guide')">
+          <h4>Message Framing Guide</h4>
+          <ul><li>Youth-centered language</li><li>Stigma-free phrasing</li><li>Call-to-action examples</li></ul>
+          <div class="expand-icon">+</div>
+          <div id="res-guide" class="detailed-content">
+            <div class="activity-box">
+              <h4>Guide</h4>
+              <p>Reference this guide for effective messaging that resonates with teens while maintaining accuracy and respect.</p>
+              <ul>
+                <li><a href="https://fasdunited.org/wp-content/uploads/2024/12/FASD-United-Language-and-Stigma-Guide.pdf" target="_blank">Language &amp; Stigma Guide – FASD&nbsp;United&nbsp;(PDF)</a></li>
+                <li><a href="https://vetoviolence.cdc.gov/apps/dating-matters-toolkit/content/i2i/" target="_blank">i2i Youth Communications Toolkit –&nbsp;CDC</a></li>
+                <li><a href="https://firespring.com/solutions-for-nonprofits/40-call-to-action-examples-that-drive-engagement/" target="_blank">40 Nonprofit Call-to-Action Examples – Firespring</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- QR CODE GENERATION TOOL -->
+        <div class="activity-card" onclick="toggleSection('res-qr')">
+          <h4>QR Code Generation Tool</h4>
+          <ul><li>Code creation tutorial</li><li>Tracking setup</li><li>Design integration tips</li></ul>
+          <div class="expand-icon">+</div>
+          <div id="res-qr" class="detailed-content">
+            <div class="activity-box">
+              <h4>Tutorial</h4>
+              <p>Learn to create trackable QR codes that link to specific resource pages and integrate them into your materials.</p>
+              <ul>
+                <li><a href="https://www.qr-code-generator.com/qr-codes-for/nonprofits/" target="_blank">QR-Code-Generator Tutorial for&nbsp;Nonprofits</a></li>
+                <li><a href="https://www.canva.com/help/create-qr-code/" target="_blank">Create QR Codes – Canva&nbsp;Help</a></li>
+                <li><a href="https://bitly.com/pages/landing/bringing-us-all-a-bit-closer?msclkid=29ae385cd895174880cc5072ec906dc3&utm_source=bing&utm_medium=cpc&utm_campaign=EN%20-%20US-CA-AU-UK%20%20-%20Bitly%20Brand%20-%20Search&utm_term=bitly&utm_content=EN%20-%20US%20-%20Brand" target="_blank">Shorten URLs. Generate QR Codes. Whatever your needs, get started for free with Bitly.</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="activities-section">
+      <h2 class="section-title">Session Activities</h2>
+      <p style="text-align:center;margin-bottom:20px;color:#495057;">Click an activity for details.</p>
+      <div class="activity-grid">
+        <!-- Framework Integration & Action Planning -->
+        <div class="activity-card" onclick="toggleSection('act-framework')">
+          <h4>Framework Integration & Action Planning <span class="time">15 mins</span></h4>
+          <ul>
+            <li>Connecting all four frameworks</li>
+            <li>Developing implementation plans</li>
+            <li>Preparing for stakeholder engagement</li>
+          </ul>
+          <div class="expand-icon">+</div>
+          <div id="act-framework" class="detailed-content">
+            <div class="activity-box">
+              <h4>Activity</h4>
+              <p>Working in your project teams, create a one-page action plan that integrates all four frameworks:</p>
+              <ol>
+                <li>Root causes identified through 5 Whys</li>
+                <li>SMART objectives addressing these root causes</li>
+                <li>KPIs for measuring progress and impact</li>
+                <li>Feedback loops for continuous improvement</li>
+              </ol>
+              <p>Plan your next steps for implementation and prepare for stakeholder engagement.</p>
+            </div>
+
+            <div class="feedback-box">
+              <h4>Reflection Questions</h4>
+              <ul>
+                <li>How do these four frameworks complement each other in addressing complex health issues?</li>
+                <li>What challenges do you anticipate in implementing your plan?</li>
+                <li>How will you engage stakeholders in your project?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message Content Development -->
+        <div class="activity-card" onclick="toggleSection('act-message')">
+          <h4>Message Content Development <span class="time">30 mins</span></h4>
+          <ul>
+            <li>Craft concise messaging</li>
+            <li>Develop clear CTAs</li>
+            <li>Create accessible language</li>
+          </ul>
+          <div class="expand-icon">+</div>
+          <div id="act-message" class="detailed-content">
+            <div class="definition-box">
+              <h4>Key Terms</h4>
+              <ul>
+                <li><strong>Message framing</strong> - How information is presented to influence perception and decision-making</li>
+                <li><strong>Gain framing</strong> - Emphasizing benefits of taking action vs. loss framing (consequences of inaction)</li>
+                <li><strong>Health literacy</strong> - Ability to understand and use health information to make decisions</li>
+                <li><strong>Call to action (CTA)</strong> - Clear directive that prompts immediate response</li>
+                <li><strong>Barrier-addressing language</strong> - Proactively countering common objections or concerns</li>
+              </ul>
+            </div>
+            
+            <div class="discussion-box">
+              <h4>Discussion Points</h4>
+              <ul>
+                <li>How can we frame sensitive health topics in ways that reduce stigma?</li>
+                <li>What reading level is appropriate for our target audience?</li>
+                <li>How do we balance comprehensive information with brevity?</li>
+                <li>What language choices might unintentionally create barriers?</li>
+                <li>How can messaging address emotional barriers like fear or embarrassment?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resource Card Creation & Visual Design -->
+        <div class="activity-card" onclick="toggleSection('act-cards')">
+          <h4>Resource Card Creation & Visual Design <span class="time">75 mins</span></h4>
+          <ul>
+            <li>Develop focused resource cards with strong visual design</li>
+            <li>Highlight key services using effective layout</li>
+            <li>Create visually compelling materials with QR codes</li>
+          </ul>
+          <div class="expand-icon">+</div>
+          <div id="act-cards" class="detailed-content">
+            <div class="definition-box">
+              <h4>Key Terms</h4>
+              <ul>
+                <li><strong>Visual hierarchy</strong> - Organizing elements to guide attention to most important information</li>
+                <li><strong>White space</strong> - Strategic use of empty space to enhance readability and focus</li>
+                <li><strong>Color psychology</strong> - Using color strategically to evoke specific emotions or meanings</li>
+                <li><strong>Typography pairing</strong> - Combining complementary fonts for headings and body text</li>
+                <li><strong>Information chunking</strong> - Grouping related information for easier processing</li>
+                <li><strong>Information hierarchy</strong> - Organization of content based on importance and visual emphasis</li>
+                <li><strong>User journey</strong> - The path a teen would take from noticing the card to accessing services</li>
+                <li><strong>Barrier reduction</strong> - Proactively addressing obstacles that prevent service utilization</li>
+              </ul>
+            </div>
+            
+            <div class="discussion-box">
+              <h4>Discussion Points</h4>
+              <ul>
+                <li>What information is most critical for teens to know about each resource type?</li>
+                <li>How can we emphasize confidentiality protections in a reassuring way?</li>
+                <li>What design approaches make resource information less intimidating?</li>
+                <li>How can resource cards serve as conversation starters for peer educators?</li>
+                <li>How do design choices impact the way teens perceive health information?</li>
+                <li>What visual elements might reduce stigma around sensitive topics?</li>
+                <li>How might different visual styles resonate with different teen demographics?</li>
+              </ul>
+            </div>
+            
+            <div class="activity-box">
+              <h4>Activity</h4>
+              <p><strong>Part 1: Design Framework &amp; Content Planning (25 mins)</strong></p>
+              <ul>
+                <li>Divide into three specialist teams (STI testing, food programs, mental health services)</li>
+                <li>Each team establishes visual design principles:
+                  <ul>
+                    <li>Select a primary and secondary color palette that evokes appropriate emotions</li>
+                    <li>Choose complementary typography for headings and body text</li>
+                    <li>Create visual hierarchy template (what information goes where)</li>
+                    <li>Select appropriate visual elements (icons, graphics, photos) that reflect youth culture</li>
+                  </ul>
+                </li>
+                <li>Each team reviews their section of the Teen Survival Guide and:
+                  <ul>
+                    <li>Identifies 2-3 most critical services to highlight based on accessibility and relevance</li>
+                    <li>Creates a content outline including:
+                      <ul>
+                        <li>An attention-grabbing headline addressing a primary need or concern</li>
+                        <li>Bulleted key information (location, hours, eligibility, cost)</li>
+                        <li>Transportation options and accessibility details</li>
+                        <li>Confidentiality protections and parental involvement requirements</li>
+                        <li>A clear "next steps" section with simple instructions</li>
+                      </ul>
+                    </li>
+                    <li>Develops a specific "barrier-busting" message that addresses the primary concern teens might have</li>
+                  </ul>
+                </li>
+                <li>Create a quick style guide to ensure consistency across all materials</li>
+              </ul>
+              
+              <p><strong>Part 2: Card Design and Creation (35 mins)</strong></p>
+              <ul>
+                <li>Using design templates and materials provided:
+                  <ul>
+                    <li>Create visually distinct resource cards for each category using appropriate color coding</li>
+                    <li>Apply consistent branding while differentiating by service type</li>
+                    <li>Implement effective information hierarchy with clear visual organization</li>
+                    <li>Include compelling imagery that is inclusive and non-stigmatizing</li>
+                    <li>Add QR code placement with clear instructions for what scanning the code will provide</li>
+                  </ul>
+                </li>
+                <li>Focus on creating cards that feature:
+                  <ul>
+                    <li>Clear, compelling headline that addresses a need or pain point</li>
+                    <li>Visually distinct sections with essential service information</li>
+                    <li>Key details highlighted (cost, confidentiality, transportation options)</li>
+                    <li>QR code with brief description of where it leads</li>
+                    <li>Appropriate imagery that is inclusive and non-stereotyping</li>
+                    <li>Contact information formatted for easy reference</li>
+                  </ul>
+                </li>
+                <li>Apply information architecture principles:
+                  <ul>
+                    <li>Most important information at top/left (eye tracking patterns)</li>
+                    <li>Group related information with visual cues</li>
+                    <li>Use bullets or numbered lists for sequential steps</li>
+                    <li>Incorporate white space strategically to prevent overwhelm</li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <p><strong>Part 3: Peer Testing and Refinement (15 mins)</strong></p>
+              <ul>
+                <li>Conduct rapid-feedback sessions where teams exchange cards and evaluate:
+                  <ul>
+                    <li>First impression: What's your immediate takeaway about this resource?</li>
+                    <li>Navigation: How easily can you find the most important information?</li>
+                    <li>Clarity: Is there anything confusing or missing?</li>
+                    <li>Appeal: Would you pick this up? Would you keep it?</li>
+                    <li>Action: Does it make you more likely to use the service?</li>
+                    <li>Accessibility: Is text readable? Do colors provide sufficient contrast?</li>
+                  </ul>
+                </li>
+                <li>Make quick refinements based on feedback</li>
+                <li>Finalize production-ready versions with any necessary improvements</li>
+              </ul>
+            </div>
+            
+            <div class="feedback-box">
+              <h4>Reflection Questions</h4>
+              <ul>
+                <li>How does your resource card address both practical and emotional barriers to access?</li>
+                <li>What feedback surprised you during the peer testing phase?</li>
+                <li>How do your cards balance between providing enough information and being overwhelmingly detailed?</li>
+                <li>What design elements might help overcome identified barriers to accessing services?</li>
+                <li>How have you balanced creativity with clarity in your design choices?</li>
+                <li>What considerations went into making your materials appealing across different cultural backgrounds?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assignment -->
+    <section class="activities-section">
+      <h2 class="section-title">Session Assignment</h2>
+      <p style="text-align:center;margin-bottom:20px;color:#495057;">Prepare for Week 3 peer-engagement push.</p>
+      <div class="activity-grid">
+        <div class="activity-card" style="cursor:auto;">
+          <h4>Final Material Production <span class="time">Due Mon 26 May</span></h4>
+          <ul><li>Submit final designs</li><li>Produce materials</li><li>Prepare distribution strategy</li></ul>
+          <div class="detailed-content" style="display:block;">
+            <p>Finalize and produce all campaign materials according to the production plan:</p>
+            <ul>
+              <li>Submit final design files in appropriate formats by Friday, May 23</li>
+              <li>Complete production of all materials</li>
+              <li>Ensure all QR codes are fully functional</li>
+              <li>Prepare distribution kits with tracking logs for Week 3 deployment</li>
+              <!-- <li>Set up analytics dashboard to monitor engagement metrics</li> -->
+            </ul>
+            <p>Have all materials ready for the Week 3 peer engagement campaign launch on Monday, May 26.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>© 2025 Health Amplified · Youth Public Health Action &amp; Collaborative Systems Lab</p>
+      <p>Contact: javier@clubstride.org | (707) 204-3160</p>
+    </footer>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    function toggleSection(id){
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.classList.toggle('active');
+      const card = el.closest('.activity-card');
+      if(card){
+        const expanded = el.classList.contains('active');
+        card.setAttribute('aria-expanded', expanded);
+        const icon = card.querySelector('.expand-icon');
+        if(icon) icon.textContent = expanded ? '–' : '+';
+      }
+    }
+  </script>
+</body>
+</html>
