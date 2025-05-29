@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Toggle Between Two Sessions</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    .toggle-buttons { padding: 1rem; background:#f0f0f0; }
+    button { margin-right: .5rem; padding:.5rem 1rem; }
+    iframe { width:100%; height:100vh; border:none; }
+  </style>
+</head>
+<body>
+
+  <div class="toggle-buttons">
+    <button onclick="showSession('session1')">Show Session 1: Messaging Activation</button>
+    <button onclick="showSession('session2')">Show Session 2: Peer Engagement & Support</button>
+  </div>
+
+  <!-- default view -->
+  <iframe id="sessionFrame" src="session-4-html-slides.html"></iframe>
+
+  <script>
+    function showSession(id) {
+      const frame = document.getElementById('sessionFrame');
+      frame.src = (id === 'session1')
+        ? 'session-4-html-slides.html'
+        : 'session-5-html-slides.html';
+    }
+  </script>
+
+</body>
+</html>
